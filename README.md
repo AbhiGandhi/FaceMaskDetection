@@ -9,10 +9,12 @@ This project is based on face mask detection it provides five depths of pytorch,
 
 ### 1. Download Or Clone Repository：
 ```
-git clone AbhiGandhi/FaceMaskDetection
+$ git clone AbhiGandhi/FaceMaskDetection
 ```
-### 2 Install the packages in the requirements.txt file
-
+### 2 Install the packages From requirements.txt file
+```
+$ pip install -requirements
+```
 ## How to Use:
 
 on image：
