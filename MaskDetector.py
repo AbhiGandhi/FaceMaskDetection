@@ -8,10 +8,9 @@ from PIL import Image, ImageDraw, ImageFont
 #import caffe
 import pyglet
 
-music = pyglet.resource.media('music.mp3')
-music.play()
-
-pyglet.app.run()
+#music = pyglet.resource.media('music.mp3')
+#music.play()
+#pyglet.app.run()
 
 #||FROM HERE DONT MESS WITH CODE Bois
 
@@ -82,7 +81,7 @@ def inference(net, image, conf_thresh=0.5, iou_thresh=0.4, target_shape=(160, 16
             else:
                 cv2.putText(image, "%s: %.2f" % (id2class[class_id], conf), (xmin + 2, ymin - 2),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.8, colors[class_id])
-                pyglet.app.run()   #Sound Alert
+               # pyglet.app.run()   #Sound Alert
     return image
 
 def run_on_video(Net, video_path, conf_thresh=1.0):
